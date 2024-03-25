@@ -30,6 +30,11 @@ a:hover{
     font-size: 24px;
     font-family: 'Roboto Slab';
     font-weight: bold;
+    background-image:url('../img/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f8f8ff;
 }
 
 .header-nav-list{
