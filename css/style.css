@@ -1,6 +1,6 @@
 /**共通 */
 body{
-    background-color: #f9f8f3;
+    background-color: #8fbc8f;
     color: #313131;
     display: flex;
     flex-direction: column;
@@ -46,4 +46,47 @@ a:hover{
     font-family: 'Roboto Slab';
     font-size: 16px;
     font-weight: bold;
+    
+}
+
+/**ニュースセクション*/
+#news-section{
+    margin-inline: auto;
+    width: clamp(320px,100%,1320px);
+}
+
+.news-section-inner-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+}
+
+.news-section-title{
+    background-color: #f8f8ff;
+    color: #313131;
+    height: 40px;
+    padding: 8px 24px;
+    width: fit-content;
+    border: 2px solid #313131;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.news-item{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.news-item p{
+    font-family: 'Roboto Slab';
+}
+
+.news-item h2{
+    text-decoration: underline;
 }
