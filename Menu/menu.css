@@ -48,56 +48,101 @@ a:hover{
     font-weight: bold;
     
 }
-/* ニュースセクション */
-#news-section{
-    padding: 40px 16px;
+
+/* メニューセクション */
+#menu-section{
+    padding: 40px 16px 16px;
     width: max(320px,100%);
 }
 
-.news-card{
-    background-color: #f8f8ff;
-    border-radius: 16px;
+.menu-inner-box{
     margin-inline: auto;
     width: min(1280px,100%);
-    padding: 24px 16px 40px;
+}
+
+.menu-title-box{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    width: min(960px,100%);
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    white-space: nowrap;
+    align-items: center;
     margin-bottom: 24px;
 }
 
-.card-title{
-    background-color:#ff7f50;
-    font-family: 'Roboto Slab';
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 24px;
-    padding: 8px 24px;
+.menu-title-box h2{
+    background-color: #f8f8ff;
+    height: 40px;
+    padding: 8px 24px 24px 24px;
     width: fit-content;
-    border: 1px solid #313131;
-    margin-bottom: 8px;
+    border: 2px solid #313131;
+    font-size: 20px;
+    line-height: 24px;  
 }
 
-.news-title-box{
-    border-bottom: 1px solid #313131;
+.menu-title-box p{
+    font-size: 10px;
+    line-height: 16px;
+    padding-bottom: 24px;
+}
+
+.menu-headding-line{
+   background-color: #313131;
+   height: 1px;
+   width: 100%;
+}
+
+.menu-card-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,min(373px,100%));
+    justify-content: center;
+    gap: 16px;
+}
+
+.menu-card{
+    width: 100%;
+}
+
+.donuts-image-box{
+    width: 100%;
+    height: 240px;
+}
+
+.donuts-image-box img{
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.menu-detail-box{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
+    height: 200px;
+    justify-content: space-between;
+    padding: 16px 0;
+    width: 100%;
     line-height: 24px;
 }
 
-.news-title-box p{
+.menu-title{
     font-family: 'Roboto Slab';
-    font-size: 16px;
-}
-
-.news-title-box h2{
     font-size: 20px;
     font-weight: bold;
 }
 
-.news-detail{
+.menu-description{
     font-size: 16px;
-    line-height: 32px;
+    padding-top: 16px;
+}
+
+.menu-price{
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: end;
 }
 
 /* フッター */
