@@ -90,15 +90,15 @@ a:hover{
     text-decoration: underline;
 }
 
-/**おすすめドリンクセクション*/
+/**おすすめメニューセクション*/
 
 #recommendation-menu-section{
-    padding: 40px 16px 0;
+    padding: 40px 16px 16px;
     width: max(320px,100%);
 }
 
 .recommendation-menu-inner-box{
-    margin-inline-start: auto;
+    margin-inline: auto;
     width: min(1280px,100%);
 }
 
@@ -185,4 +185,61 @@ a:hover{
     font-size: 16px;
     font-weight: bold;
     text-align: end;
+}
+
+/**アクセスセクション*/
+#access-section{
+    margin-inline: auto;
+    padding: 40px 16px 16px;
+    width: clamp(320px,100%,1280px);
+}
+
+.access-map{
+    height: 320px;
+    width: 100%;
+}
+
+.access-map iframe{
+    height: 320px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.access-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.access-detail ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.access-detail h2{
+    background-color: #f8f8ff;
+    height: 40px;
+    padding: 8px 24px;
+    width: fit-content;
+    border: 2px solid #313131;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+
+}
+
+.access-detail h3{
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.access-detail-item{
+    font-size: 16px;
+    line-height: 24px;
 }
