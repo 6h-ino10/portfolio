@@ -29,7 +29,7 @@
 
         <!-- CSSの読み込み -->
         <link rel="stylesheet" href="./reset.css" />
-        <link rel="stylesheet" href="./news.css" />
+        <link rel="stylesheet" href="./contact.css" />
     </head>
     <!-- END__Head__Area -->
 
@@ -51,7 +51,7 @@
                         <a href="../top.html#access-section">Access</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -61,7 +61,41 @@
         </header>
 
         <main>
-            
+            <section id="contact-form-section">
+                <header class="contact-title-box">
+                    <h2>お問い合わせ</h2>
+                    <p>
+                        ご不明な点やご要望がございましたら、<br/>
+                        下記フォームよりお気軽にお問い合わせください。
+                    </p>
+                </header>
+                <form class="form-card" action="/submit-form" method="post">
+                    <div class="form-item-box">
+                        <div class="label-box">
+                            <label class="form-item-label" for="name">お名前</label>
+                            <span class="required-badge">必須</span>
+                        </div>
+                        <input class="text-input" type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="form-item-box">
+                        <div class="label-box">
+                            <label class="form-item-label" for="email">email</label>
+                            <span class="required-badge">必須</span>
+                        </div>
+                        <input class="text-input" type="text" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-item-box">
+                        <div class="label-box">
+                            <label class="form-item-label" for="message">本文</label>
+                            <span class="required-badge">必須</span>
+                        </div>
+                        <textarea class="text-area-input" id="message" name="message" required></textarea>
+                    </div>
+                    <button class="submit-button" type="submit">送信する</button>
+                </form>
+            </section>
         </main>
 
         <footer id="footer-nav">

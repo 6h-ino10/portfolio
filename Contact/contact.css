@@ -49,6 +49,110 @@ a:hover{
     
 }
 
+/* お問い合わせフォームセクション */
+#contact-form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 16px;
+    width: max(320px,100%);
+}
+
+.contact-title-box{
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-title-box h2{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.contact-title-box p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form-card{
+    padding: 40px 16px;
+    background-color: #f8f8ff;
+    border-radius: 16px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    width: min(728px,100%);
+    margin-inline: auto;
+}
+
+.form-item-box{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-item-label{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.required-badge{
+    height: 16px;
+    width: fit-content;
+    background-color: #ff7f50;
+    border-radius: 4px;
+    padding: 0 8px;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #f8f8ff;
+}
+
+.label-box{
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.text-input{
+    padding: 12px 8px;
+    border: 1px solid #313131;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.text-area-input{
+    padding: 12px 8px;
+    border: 1px solid #313131;
+    border-radius: 4px;
+    height: 336px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.submit-button{
+    background-color: #ff7f50;
+    border-radius: 16px;
+    height: 56px;
+    width: fit-content;
+    padding: 16px 80px;
+    margin: 16px auto 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #f8f8ff;
+}
+
 
 /* フッター */
 
