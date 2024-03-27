@@ -33,9 +33,7 @@ a:hover{
     height: 240px;
     margin-inline: auto;
     padding: 32px 0;
-    /*font-size: 24px;*/
     font-family: 'Roboto Slab';
-    /* font-weight: bold; */
     background-image:url('../img/header-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -250,6 +248,9 @@ a:hover{
     line-height: 24px;
 }
 
+.access-section-container{
+    margin-top: 40px;
+}
 /* フッター */
 
 #footer-nav{
@@ -309,3 +310,101 @@ a:hover{
 .copyright br{
     display: none;
 }
+
+.access-section-container{
+    display: block;
+    gap: 40px;
+}
+
+/* PC */
+@media screen and (min-width:768px){
+
+    /* ヘッダー */
+    #header-nav div{
+        width: clamp(320px,100%1280px);
+        margin-inline: auto;
+        /* padding: 24px 40px; */
+    }
+
+    .header-nav-title{
+    
+    }
+
+    .header-nav-list{
+        font-size:20px;
+        width: auto;
+        margin: 8px 60px;
+    }
+    /* ニュースセクション */
+    #news-section{
+        padding: 0 40px;
+    }
+
+    .news-section-inner-box{
+        align-items: center;
+        border-radius: 16px;
+        flex-direction: row;
+        gap: 56px;
+        margin-top: 24px;
+        padding: 16px 144px 16px 40px;
+        width: fit-content;
+    }
+
+    .news-item{
+        gap: 56px;
+    }
+
+    /* おすすめメニューセクション */
+    #recommendation-menu-section{
+        padding: 80px 0 40px;
+    }
+
+    .recommendation-menu-title-box{
+        gap: 40px;
+        padding: 0 0 40px 40px;
+    }
+
+    .recommendation-menu-title-box h2{
+        white-space: nowrap;
+    }
+
+    .recommendation-menu-title-box p{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .recommendation-menu-card-box{
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .donuts-image-box{
+        height: 264px;
+    }
+
+    .menu-detail-box{
+        height: 216px;
+    }
+
+    /* アクセスセクション */
+    #access-section{
+        padding: 40px;
+    }
+
+    .access-section-container{
+        display: flex;
+        gap: 35px;
+    }
+
+    .access-map{
+        height: 100%;
+        width: 70%;
+    }
+
+    .access-detail{
+        padding-top: 0;
+    }
+
+}
+
+

@@ -17,7 +17,7 @@
         <!-- ビューポートの設定 -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
         <!-- ファビコンの設定 -->
-        <link rel="icon" href="./assets/favicon.ico" />
+        <link rel="icon" href="../img/logo.png" />
 
         <!-- Googleフォントの読み込み -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +36,8 @@
     <!-- START__Body__Area-->
     <body>
         <header id="header-nav">
-            <nav>
+        <div>
+            <nav aria-label="ヘッダーナビゲーション">
                 <ul class="header-nav-list">
                     <li>
                         <a href="top.html">Home</a>
@@ -60,6 +61,7 @@
                 <h2>材料にこだわった自然派ドーナツ店。<br/>
                     一つ一つ丁寧に手作りしています。</h2>
             </div>
+        </div>
         </header>
 
         <main>
@@ -153,15 +155,18 @@
             </section>
 
             <section id="access-section">
-                <article>
-                    <figure class="access-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.567438910075!2d139.66834882346643!3d35.6076734674402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4e1c51d4547%3A0x395db73328f5ec1!2z44CSMTUyLTAwMzUg5p2x5Lqs6YO955uu6buS5Yy66Ieq55Sx44GM5LiY!5e0!3m2!1sja!2sjp!4v1711353049392!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </figure>
-                </article>
                 <div class="access-detail">
                     <header>
                         <h2>ACCESS</h2>
                     </header>
+                </div>
+
+                <article class="access-section-container">
+                    <figure class="access-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.567438910075!2d139.66834882346643!3d35.6076734674402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4e1c51d4547%3A0x395db73328f5ec1!2z44CSMTUyLTAwMzUg5p2x5Lqs6YO955uu6buS5Yy66Ieq55Sx44GM5LiY!5e0!3m2!1sja!2sjp!4v1711353049392!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                
+                <div class="access-detail">
                     <div>
                         <h3>Comfy Crullers 自由が丘</h3>
                         <address>
@@ -185,13 +190,14 @@
                         </address>
                     </div>
                 </div>
+                </article>
             </section>
         </main>
 
         <footer id="footer-nav">
             <div class="footer-nav-inner-box">
                 <div class="footer-left-box">
-                    <nav>
+                    <nav aria-label="フッターナビゲーション">
                         <ul class="footer-nav-list">
                             <li>
                                 <a href="#">プライバシーポリシー</a>
