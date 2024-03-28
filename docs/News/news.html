@@ -6,14 +6,15 @@
         <!-- 文字コードの設定 -->
         <meta charset="utf-8" />
         <!-- サイトのタイトル -->
-        <title>お問い合わせ - Comfy Crullers 自由が丘</title>
+        <title>Comfy Crullers 代官山店 NewOPEN！ - Comfy Crullers 自由が丘</title>
         <!-- サイトの詳細 -->
         <meta
             name="description"
-            content="Comfy Crullers 自由が丘のお問い合わせページです。ご質問、ご要望はこちらのフォームよりお問い合わせください。"
+            content="Comfy Crullersの２号店として代官山店がオープンしました。  3月24日までNewOPENフェア開催しており、期間限定ドーナツを販売しております。
+            また、1500円以上のお買い上げでノベルティをプレゼント！"
         />
         <!-- サイトのターゲットキーワード -->
-        <meta name="keywords" content="お問い合わせ,自由が丘,ドーナツ,無添加" />
+        <meta name="keywords" content="代官山,自由が丘,ドーナツ,無添加" />
         <!-- ビューポートの設定 -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
         <!-- ファビコンの設定 -->
@@ -29,7 +30,7 @@
 
         <!-- CSSの読み込み -->
         <link rel="stylesheet" href="./reset.css" />
-        <link rel="stylesheet" href="./contact.css" />
+        <link rel="stylesheet" href="./news.css" />
     </head>
     <!-- END__Head__Area -->
 
@@ -39,7 +40,7 @@
             <nav aria-label="ヘッダーナビゲーション">
                 <ul class="header-nav-list">
                     <li>
-                        <a href="../top.html">Home</a>
+                        <a href="../index.html">Home</a>
                     </li>
                     <li>
                         <a href="../Menu/menu.html">Menu</a>
@@ -48,53 +49,66 @@
                         <a href="../News/news.html">News</a>
                     </li>
                     <li>
-                        <a href="../top.html#access-section">Access</a>
+                        <a href="../index.html#access-section">Access</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="../Contact/contact.php">Contact</a>
                     </li>
                 </ul>
             </nav>
             <div class="header-nav-title">
-                <h1>Contact</h1>
+                <h1>News</h1>
             </div>
         </header>
 
         <main>
-            <section id="contact-form-section">
-                <header class="contact-title-box">
-                    <h2>お問い合わせ</h2>
-                    <p>
-                        ご不明な点やご要望がございましたら、<br/>
-                        下記フォームよりお気軽にお問い合わせください。
-                    </p>
-                </header>
-                <form class="form-card" action="/submit-form" method="post">
-                    <div class="form-item-box">
-                        <div class="label-box">
-                            <label class="form-item-label" for="name">お名前</label>
-                            <span class="required-badge">必須</span>
-                        </div>
-                        <input class="text-input" type="text" id="name" name="name" required />
-                    </div>
+            <section id="news-section">
+                    <header class="card-title">
+                        <h2>NEW!!</h2>
+                    </header>
 
-                    <div class="form-item-box">
-                        <div class="label-box">
-                            <label class="form-item-label" for="email">email</label>
-                            <span class="required-badge">必須</span>
+                    <div class="news-card">
+                        <header class="news-title-box">
+                            <p><time datetime="2024-03-05">2024.3.5</time></p>
+                            <h2>Comfy Crullers 代官山店 NewOPEN！</h2>
+                        </header>
+    
+                        <div class="news-detail">
+                            <p>
+                                Comfy Crullersの2号店として代官山店がオープンいたしました。
+                                3月24日までNewOPENフェア開催しており、期間限定ドーナツを販売しております。
+                                また、1500円以上のお買い上げでノベルティをプレゼント！
+                            </p>
                         </div>
-                        <input class="text-input" type="text" id="email" name="email" required />
                     </div>
-
-                    <div class="form-item-box">
-                        <div class="label-box">
-                            <label class="form-item-label" for="message">本文</label>
-                            <span class="required-badge">必須</span>
+                    <div class="news-card">
+                        <header class="news-title-box">
+                            <p><time datetime="2024-02-21">2024.2.21</time></p>
+                            <h2>新作ドーナツ　Strawberry Sugar　発売開始！</h2>
+                        </header>
+    
+                        <div class="news-detail">
+                            <p>
+                                本日、春の新作ドーナツ"Strawberry Sugar"をリリース！<br/>
+                                ふんわりとした生地に甘さ控えめなカスタードクリーム、甘酸っぱいいちごが絶妙。いちご好きにはたまらないドーナツです。
+                                ぜひ、お試しください。
+                            </p>
                         </div>
-                        <textarea class="text-area-input" id="message" name="message" required></textarea>
                     </div>
-                    <button class="submit-button" type="submit">送信する</button>
-                </form>
+                    <div class="news-card">
+                        <header class="news-title-box">
+                            <p><time datetime="2024-02-07">2024.2.7</time></p>
+                            <h2>バレンタインイベント開催中！</h2>
+                        </header>
+    
+                        <div class="news-detail">
+                            <p>
+                                2月3日(土)よりバレンタインイベントを開催しております。
+                                期間限定ドーナツの販売もございますので、この機会にぜひご来店ください。<br/>
+                                イベントは2月14日(水)まで開催中！
+                            </p>
+                        </div>
+                    </div>
             </section>
         </main>
 
