@@ -111,7 +111,7 @@ a:hover{
 }
 
 .donuts-image-box img{
-    height: auto;
+    height: 240px;
     object-fit: cover;
     width: 100%;
     border-radius: 16px;
