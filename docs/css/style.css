@@ -1,0 +1,410 @@
+/**共通 */
+body{
+    background-color: #8fbc8f;
+    color: #313131;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans JP','Roboto','Roboto Slab',sans-serif;
+    min-height: 100vh;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+
+/**ヘッダー */
+#header-nav{
+    width: 100%;
+}
+
+#header-nav h1{
+    padding: 32px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-nav-title{
+    text-align: center;
+    height: 240px;
+    margin-inline: auto;
+    padding: 32px 0;
+    font-family: 'Roboto Slab';
+    background-image:url('../img/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f8f8ff;  
+}
+
+.header-nav-list{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding: 8px 16px;
+    width: min(416px,100%);
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+/**ニュースセクション*/
+#news-section{
+    margin-inline: auto;
+    width: clamp(320px,100%,1320px);
+}
+
+.news-section-inner-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+}
+
+.news-section-title{
+    background-color: #f8f8ff;
+    height: 40px;
+    padding: 8px 24px;
+    width: fit-content;
+    border: 2px solid #313131;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.news-item{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.news-item p{
+    font-family: 'Roboto Slab';
+}
+
+.news-item h2{
+    text-decoration: underline;
+}
+
+/**おすすめメニューセクション*/
+
+#recommendation-menu-section{
+    padding: 40px 16px 16px;
+    width: max(320px,100%);
+}
+
+.recommendation-menu-inner-box{
+    margin-inline: auto;
+    width: min(1280px,100%);
+}
+
+.recommendation-menu-title-box{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    width: min(960px,100%);
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    white-space: nowrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.recommendation-menu-title-box h2{
+    background-color: #f8f8ff;
+    height: 40px;
+    padding: 8px 24px 24px 24px;
+    width: fit-content;
+    border: 2px solid #313131;
+    font-size: 20px;
+    line-height: 24px;  
+}
+
+.recommendation-menu-title-box p{
+    font-size: 10px;
+    line-height: 16px;
+    padding-bottom: 24px;
+}
+
+.recommendation-menu-headding-line{
+   background-color: #313131;
+   height: 1px;
+   width: 100%;
+}
+
+.recommendation-menu-card-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,min(373px,100%));
+    justify-content: center;
+    gap: 16px;
+}
+
+.recommendation-menu-card{
+    width: 100%;
+}
+
+.donuts-image-box{
+    width: 100%;
+    height: 240px;
+}
+
+.donuts-image-box img{
+    height: 240px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.menu-detail-box{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    padding: 16px 0;
+    width: 100%;
+    line-height: 24px;
+}
+
+.menu-title{
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-description{
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.menu-price{
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: end;
+}
+
+/**アクセスセクション*/
+#access-section{
+    margin-inline: auto;
+    padding: 40px 16px 16px;
+    width: clamp(320px,100%,1280px);
+}
+
+.access-map{
+    height: 320px;
+    width: 100%;
+}
+
+.access-map iframe{
+    height: 320px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.access-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.access-detail ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.access-detail h2{
+    background-color: #f8f8ff;
+    height: 40px;
+    padding: 8px 24px;
+    width: fit-content;
+    border: 2px solid #313131;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+
+}
+
+.access-detail h3{
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.access-detail-item{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.access-section-container{
+    margin-top: 40px;
+}
+/* フッター */
+
+#footer-nav{
+    background-image:url('../img/footer-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    padding: 24px 16px;
+    width: max(320px,100%);
+    margin-top: auto; 
+    color: #f8f8ff;
+}
+
+.footer-nav-inner-box{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin-inline: auto;
+    width: min(1280px,100%);
+}
+
+.footer-nav-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 8px;
+    line-height: 16px;
+    text-decoration: underline;
+}
+
+.footer-left-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-right-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: auto;
+}
+
+.sns-box{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.copyright{
+    font-size: 10px;
+    line-height: 16px;
+    width: 180px;
+}
+
+.copyright br{
+    display: none;
+}
+
+.access-section-container{
+    display: block;
+    gap: 40px;
+}
+
+/* PC */
+@media screen and (min-width:768px){
+
+    /* ヘッダー */
+    #header-nav div{
+        width: clamp(320px,100%1280px);
+        margin-inline: auto;
+        /* padding: 24px 40px; */
+    }
+
+    .header-nav-title{
+    
+    }
+
+    .header-nav-list{
+        font-size:20px;
+        width: auto;
+        margin: 8px 60px;
+    }
+    /* ニュースセクション */
+    #news-section{
+        padding: 0 40px;
+    }
+
+    .news-section-inner-box{
+        align-items: center;
+        border-radius: 16px;
+        flex-direction: row;
+        gap: 56px;
+        margin-top: 24px;
+        padding: 16px 144px 16px 40px;
+        width: fit-content;
+    }
+
+    .news-item{
+        gap: 56px;
+    }
+
+    /* おすすめメニューセクション */
+    #recommendation-menu-section{
+        padding: 80px 0 40px;
+    }
+
+    .recommendation-menu-title-box{
+        gap: 40px;
+        padding: 0 0 40px 40px;
+    }
+
+    .recommendation-menu-title-box h2{
+        white-space: nowrap;
+    }
+
+    .recommendation-menu-title-box p{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .recommendation-menu-card-box{
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .donuts-image-box{
+        height: 264px;
+    }
+
+    .menu-detail-box{
+        height: 216px;
+    }
+
+    /* アクセスセクション */
+    #access-section{
+        padding: 40px;
+    }
+
+    .access-section-container{
+        display: flex;
+        gap: 35px;
+    }
+
+    .access-map{
+        height: 100%;
+        width: 70%;
+    }
+
+    .access-detail{
+        padding-top: 0;
+    }
+
+}
+
+
