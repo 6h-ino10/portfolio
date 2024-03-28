@@ -1,7 +1,9 @@
 <?php
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     var_dump($_POST);
-// }
+require_once('FormValidator.php');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $validator = new FormValidator($_POST);
+    $errors = $validator->validate();
+}
 ?>
 
 <!doctype html>
@@ -64,7 +66,7 @@
 
     <main>
         <section id="contact-form-section">
-            <?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>
+            <?php if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($errors)) : ?>
                 <!-- 送信完了後の内容 -->
                 <header class="contact-title-box">
                     <h2>送信完了</h2>
@@ -112,29 +114,36 @@
                         下記フォームよりお気軽にお問い合わせください。
                     </p>
                 </header>
+                <?php if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($errors)) : ?>
+                    <div>
+                        <ul>
+                            <?php foreach ($errors as $error) : ?>
+                                <li><?php echo $error; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
                 <form class="form-card" action="contact.php" method="post">
                     <div class="form-item-box">
                         <div class="label-box">
                             <label class="form-item-label" for="name">お名前</label>
                             <span class="required-badge">必須</span>
                         </div>
-                        <input class="text-input" type="text" id="name" name="name" required />
+                        <input class="text-input" type="text" id="name" name="name" value="<?php echo htmlspecialchars($_POST['name'] ?? ''); ?>" required />
                     </div>
-
                     <div class="form-item-box">
                         <div class="label-box">
                             <label class="form-item-label" for="email">email</label>
                             <span class="required-badge">必須</span>
                         </div>
-                        <input class="text-input" type="text" id="email" name="email" required />
+                        <input class="text-input" type="text" id="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" required />
                     </div>
-
                     <div class="form-item-box">
                         <div class="label-box">
                             <label class="form-item-label" for="message">本文</label>
                             <span class="required-badge">必須</span>
                         </div>
-                        <textarea class="text-area-input" id="message" name="message" required></textarea>
+                        <textarea class="text-area-input" id="message" name="message" required><?php echo htmlspecialchars($_POST['message'] ?? ''); ?></textarea>
                     </div>
                     <button class="submit-button" type="submit">送信する</button>
                 </form>
